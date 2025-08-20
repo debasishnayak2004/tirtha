@@ -1,0 +1,374 @@
+
+    body {
+      background: #000;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    
+/* header code  */
+  .navbar-nav .nav-link { font-weight: 500;
+    color: #000;
+   
+}
+ .navbar-nav .nav-link:hover{
+    color: #f06d70 !important;
+ }
+.active{
+    color: #f06d70 !important;
+}
+  
+/* Show dropdown on hover (desktop only) */
+@media (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+.dropdown-item {
+  font-weight: 500;
+  padding: 10px 15px;
+}
+
+.dropdown-item i {
+  color: #ff6600;
+  font-size: 14px;
+}
+
+.dropdown-menu {
+  border-radius: 8px;
+}
+  /* header code end */
+
+    .seo-header {
+  background: #47b549;
+  overflow: hidden;
+      border-radius: 0px 0px 119px 109px;
+}
+.seo-header h4,
+.seo-header small {
+  position: relative;
+  z-index: 2;
+}
+.seo-header svg {
+  z-index: 1;
+}
+
+/* footer */
+.footer-menu li a{
+color: #ffffffa8;
+}
+.footer-menu li{
+padding-top: 10px;
+}
+
+/* why choise section */
+  .card img {
+    object-fit: cover;
+    height: auto;
+  }
+  .card-footer {
+    border-top: none;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }
+
+
+
+ /* ===== Fixed Button Sections ===== */
+.left-fixed-buttons,
+.right-fixed-buttons {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
+  transition: all 0.5s ease-in-out;
+}
+
+.left-fixed-buttons { left: 0; }
+.right-fixed-buttons { right: 0; }
+
+.toggle-btn {
+  cursor: pointer;
+}
+
+/* ===== Buttons ===== */
+.btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transition: background 0.3s ease;
+}
+
+.btn-box i { font-size: 20px; }
+
+/* Button Colors */
+.email { background: #32CD32; }
+.whatsapp { background: #25D366; }
+.phone { background: #2ecc71; }
+.facebook { background: #3b5998; }
+.instagram { background: #E4405F; }
+.linkedin { background: #0077b5; }
+.twitter { background: #1DA1F2; }
+
+.btn-box:hover { opacity: 0.9; }
+
+/* Hidden states for toggle */
+.hide-left { transform: translate(-100%, -50%); }
+.hide-right { transform: translate(100%, -50%); }
+
+/* ===== Wrapper for Get Call Button + Form ===== */
+.btn-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* ===== Call Form ===== */
+.call-form {
+  position: absolute;
+  left: 70px;   /* distance from left button bar */
+  top: 0;
+  width: 320px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 9999;
+}
+
+/* Show when active */
+.call-form.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* ===== Call Form Header ===== */
+.call-form .form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.call-form .form-header h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.call-form .close-btn {
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+}
+
+/* ===== Form Inputs ===== */
+.call-form form input,
+.call-form form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.call-form form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* ===== Form Button ===== */
+.call-form form button {
+  width: 100%;
+  padding: 12px;
+  background: #32CD32;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.call-form form button:hover {
+  background: #28a428;
+}
+
+
+
+
+
+
+.call-form.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.call-form .form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.call-form .form-header h5 {
+  margin: 0;
+  font-weight: bold;
+  color: #0026d3;
+}
+
+.call-form .close-btn {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: #666;
+}
+
+.call-form form input,
+.call-form form textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  outline: none;
+}
+
+.call-form form textarea {
+  border-radius: 15px;
+  min-height: 80px;
+}
+
+.call-form form button {
+  width: 100%;
+  padding: 12px;
+  background: #7d5cff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.call-form form button:hover {
+  background: #5a3fd1;
+}
+
+/* about page */
+.section-title {
+  position: relative;
+  display: inline-block;
+  color: #007bff;
+  padding-bottom: 10px; /* gap between text and underline */
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 80px;         /* underline length */
+  height: 3px;         /* underline thickness */
+  background-color: #007bff; /* blue color */
+  border-radius: 2px;
+}
+
+/* members section */
+.badge-custom {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background: #ffc107; /* Yellow */
+  color: #000;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.card-footer {
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* services bulk whatsapp */
+/* Feature Section */
+.feature-section {
+  background: #e6f9ee;
+  padding: 60px 0;
+  color: #000;
+}
+.feature-item{
+  border-right: 1px solid;
+    padding-right: 20px;
+}
+
+.feature-item h6 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  background: #235939;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.feature-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.manage-section .feature-box {
+  padding: 30px;
+  border-radius: 8px;
+  color: #333;
+  min-height: 250px;
+}
+.bg-purple {
+  background-color: #d9b3e6; /* light purple */
+}
+
+.se-btn{
+    background-color: #235939;
+    color: #ffffff;
+}
+.color{
+    color: #235939;
+}
