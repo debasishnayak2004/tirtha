@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Home</title>
+  <title>Tirtha Agency || services || Bulk SMS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -271,7 +271,11 @@ Simple Dashboard</h3>
             </div>
           <div class="mx-lg-5">
             <h3>What is bulk SMS?</h3>
-          <h5 class=" text-muted py-3" style="text-align: justify;">SMS has made communication convenient in the recent years. Personal communication became easier and marketing communications became more beneficial to companies. Marketing communications improve customer relations which in turn generates revenue. Bulk SMS is an active SMS channel used to send SMS to a large group of customers and is considered to be cheaper than messages sent from your phone. Sending messages in bulk gives it its name. It is better than conventional methods of marketing and email marketing. SMS has higher open rates than emails. They are opened within a few seconds upon receiving and customers are more likely to be aware of things that interests them. SMS has an advantage like none other, it can reach anyone anywhere anytime. This included, it becomes the most desirable option for marketing. Bulk SMS is used to promote and improve sales. Continuing relations with customers is imperative and including them in everything new is favorable. Bulk SMS also serves as reminders to customers regarding important appointments. Some of the other include transaction messages and confirmation messages. That being said, it is time to incorporate bulk sms services into your business. However, it is essential you abide by the TRAI guidelines issued by the Government of India.</h5>
+          <h5 class=" text-muted py-3" style="text-align: justify;">Bulk SMS is a powerful communication channel that allows businesses to send messages to a large group of customers simultaneously. Over the years, SMS has made personal and marketing communication simpler, more effective, and cost-efficient. Unlike conventional marketing methods or email campaigns, SMS has higher open rates, with most messages being read within seconds of receipt.
+
+Bulk SMS helps businesses promote products, improve sales, and maintain customer relationships efficiently. It can be used for transactional alerts, order confirmations, appointment reminders, or promotional campaigns. Its reach is unparalleled—messages can reach anyone, anywhere, at any time—making it one of the most desirable marketing options.
+
+Incorporating Bulk SMS into your business strategy not only boosts engagement but also ensures customers stay informed about important updates. Businesses must, however, comply with TRAI guidelines issued by the Government of India to ensure safe and ethical messaging.</h5>
           </div>
           </div>
         
@@ -400,19 +404,7 @@ Simple Dashboard</h3>
       <i class="fas fa-envelope"></i> Get A Inquiry
     </a>
     <!-- Hidden Form -->
-    <div class="call-form" id="callForm">
-      <div class="form-header">
-        <h5>Call Back Request</h5>
-        <span class="close-btn" id="closeForm">&times;</span>
-      </div>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="tel" placeholder="Phone Number" required>
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+      
   </div>
 
   <a href="https://wa.me/1234567890" target="_blank" class="btn-box whatsapp">
@@ -438,9 +430,25 @@ Simple Dashboard</h3>
   <a href="https://linkedin.com" target="_blank" class="btn-box linkedin">
     <i class="fab fa-linkedin-in"></i>
   </a>
-  <a href="https://twitter.com" target="_blank" class="btn-box twitter" style="border-radius: 0px 0px 0px 10px;">
-    <i class="fab fa-twitter"></i>
-  </a>
+   <!-- Telegram -->
+<a href="https://t.me/yourusername" target="_blank" class="btn-box telegram" style="background-color: #3b82f6;">
+  <i class="fab fa-telegram-plane"></i>
+</a>
+
+<!-- YouTube -->
+<a href="https://youtube.com/yourchannel" target="_blank" class="btn-box youtube" style="background-color: red;">
+  <i class="fab fa-youtube"></i>
+</a>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/919937022616" target="_blank" class="btn-box whatsapp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- X (Twitter) -->
+<a href="https://x.com/yourusername" target="_blank" class="btn-box twitter">
+  <i class="fab fa-twitter"></i>
+</a>
 </div>
 
 <!-- jQuery + Waypoints + Counter -->
@@ -452,152 +460,7 @@ Simple Dashboard</h3>
   <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-  $('#counter-section').waypoint(function() {
-    $('.counter').each(function () {
-      var $this = $(this);
-      $({ Counter: 0 }).animate({ Counter: $this.data('target') }, {
-        duration: 2000,
-        easing: 'swing',
-        step: function (now) {
-          $this.text(Math.ceil(now));
-        }
-      });
-    });
-    this.destroy(); // trigger only once
-  }, { offset: '80%' });
-</script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      cssMode: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-
-      pagination: {
-        el: ".swiper-pagination",
-      },
-      mousewheel: true,
-      keyboard: true,
-    });
-
-     var swiper2 = new Swiper(".mySwiper2", {
-    slidesPerView: 5,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 2,
-      },
-      576: {
-        slidesPerView: 3,
-      },
-      768: {
-        slidesPerView: 4,
-      },
-      992: {
-        slidesPerView: 5,
-      }
-    }
-  });
-
-    var swiper3 = new Swiper(".mySwiper3", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-             loop: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2
-      }
-    }
-  });
-  </script>
-
-<script>
-function toggleBar(side) {
-  const bar = document.getElementById(side + "Bar");
-
-  // Toggle buttons
-  bar.querySelectorAll(".btn-box").forEach(btn => {
-    btn.classList.toggle("d-none");
-  });
-
-  // Toggle arrow icon
-  const icon = bar.querySelector(".toggle-btn i");
-  if (side === "left") {
-    icon.classList.toggle("fa-arrow-left");
-    icon.classList.toggle("fa-arrow-right");
-  } else {
-    icon.classList.toggle("fa-arrow-right");
-    icon.classList.toggle("fa-arrow-left");
-  }
-}
-
-// ===== Call Form Handling =====
-const getCallBtn = document.getElementById("getCallBtn");
-const callForm   = document.getElementById("callForm");
-const closeForm  = document.getElementById("closeForm");
-const leftBar    = document.getElementById("leftBar");
-const rightBar   = document.getElementById("rightBar");
-
-// Show form on hover Get Call
-getCallBtn.addEventListener("mouseenter", () => {
-  callForm.classList.add("active");
-});
-
-// Keep open when hovering inside form
-callForm.addEventListener("mouseenter", () => {
-  callForm.classList.add("active");
-});
-
-// Hide if mouse moves to any other left bar button
-leftBar.querySelectorAll(".btn-box").forEach(btn => {
-  if (btn.id !== "getCallBtn") {
-    btn.addEventListener("mouseenter", () => {
-      callForm.classList.remove("active");
-    });
-  }
-});
-
-// Hide if mouse moves to right bar buttons
-rightBar.querySelectorAll(".btn-box").forEach(btn => {
-  btn.addEventListener("mouseenter", () => {
-    callForm.classList.remove("active");
-  });
-});
-
-// Hide if mouse leaves the form area
-callForm.addEventListener("mouseleave", () => {
-  if (!getCallBtn.matches(":hover")) {
-    callForm.classList.remove("active");
-  }
-});
-
-// Close button
-closeForm.addEventListener("click", () => {
-  callForm.classList.remove("active");
-});
-</script>
-
+<script src="assets/js/script.js"></script>
 
 
 

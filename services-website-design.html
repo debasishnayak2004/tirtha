@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Home</title>
+  <title>Tirtha Agency || Services || Web Design</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -113,10 +113,13 @@
           Services for Outsourcing and White-Label<span class="color"> Partnerships</span>
         </h2>
         <p class="mt-3 text-dark fs-6">
-         Are you a digital agency services or technology company looking for a partner in the evolving web development & business marketing space? ColorWhistle will be perfect for you.
+        Are you a digital agency or technology company seeking a reliable partner in the evolving web development and business marketing landscape? Tirtha Agency is your ideal choice.
         </p>
-        <p class="text-dark fs-6 py-3">
-            Over the years, we have developed a white label partnership with many digital agencies in USA, UK and delivered the highest quality of web design, web development, application development, and digital marketing technology services. By creating a B2B partnership with industry leaders, we have strengthened our ability to offer best-in-class web technology services and solutions.
+        <p class="text-dark fs-6 py-1">
+           Over the years, we have built strong white-label partnerships with numerous digital agencies across the USA, UK, and beyond, delivering top-quality web design, web development, application development, and digital marketing services. By collaborating with industry leaders, we enhance our ability to provide best-in-class web technology solutions and support, enabling your agency to scale efficiently while maintaining high standards.
+        </p>
+        <p class="text-dark fs-6 py-1">
+         Partner with Tirtha Agency to leverage our expertise, expand your service offerings, and provide superior digital solutions to your clients seamlessly.
         </p>
       </div>
 
@@ -235,19 +238,7 @@
       <i class="fas fa-envelope"></i> Get A Inquiry
     </a>
     <!-- Hidden Form -->
-    <div class="call-form" id="callForm">
-      <div class="form-header">
-        <h5>Call Back Request</h5>
-        <span class="close-btn" id="closeForm">&times;</span>
-      </div>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="tel" placeholder="Phone Number" required>
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+      
   </div>
 
   <a href="https://wa.me/1234567890" target="_blank" class="btn-box whatsapp">
@@ -273,9 +264,25 @@
   <a href="https://linkedin.com" target="_blank" class="btn-box linkedin">
     <i class="fab fa-linkedin-in"></i>
   </a>
-  <a href="https://twitter.com" target="_blank" class="btn-box twitter" style="border-radius: 0px 0px 0px 10px;">
-    <i class="fab fa-twitter"></i>
-  </a>
+   <!-- Telegram -->
+<a href="https://t.me/yourusername" target="_blank" class="btn-box telegram" style="background-color: #3b82f6;">
+  <i class="fab fa-telegram-plane"></i>
+</a>
+
+<!-- YouTube -->
+<a href="https://youtube.com/yourchannel" target="_blank" class="btn-box youtube" style="background-color: red;">
+  <i class="fab fa-youtube"></i>
+</a>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/919937022616" target="_blank" class="btn-box whatsapp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- X (Twitter) -->
+<a href="https://x.com/yourusername" target="_blank" class="btn-box twitter">
+  <i class="fab fa-twitter"></i>
+</a>
 </div>
 
 <!-- jQuery + Waypoints + Counter -->
@@ -287,152 +294,7 @@
   <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-  $('#counter-section').waypoint(function() {
-    $('.counter').each(function () {
-      var $this = $(this);
-      $({ Counter: 0 }).animate({ Counter: $this.data('target') }, {
-        duration: 2000,
-        easing: 'swing',
-        step: function (now) {
-          $this.text(Math.ceil(now));
-        }
-      });
-    });
-    this.destroy(); // trigger only once
-  }, { offset: '80%' });
-</script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      cssMode: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-
-      pagination: {
-        el: ".swiper-pagination",
-      },
-      mousewheel: true,
-      keyboard: true,
-    });
-
-     var swiper2 = new Swiper(".mySwiper2", {
-    slidesPerView: 5,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 2,
-      },
-      576: {
-        slidesPerView: 3,
-      },
-      768: {
-        slidesPerView: 4,
-      },
-      992: {
-        slidesPerView: 5,
-      }
-    }
-  });
-
-    var swiper3 = new Swiper(".mySwiper3", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-             loop: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2
-      }
-    }
-  });
-  </script>
-
-<script>
-function toggleBar(side) {
-  const bar = document.getElementById(side + "Bar");
-
-  // Toggle buttons
-  bar.querySelectorAll(".btn-box").forEach(btn => {
-    btn.classList.toggle("d-none");
-  });
-
-  // Toggle arrow icon
-  const icon = bar.querySelector(".toggle-btn i");
-  if (side === "left") {
-    icon.classList.toggle("fa-arrow-left");
-    icon.classList.toggle("fa-arrow-right");
-  } else {
-    icon.classList.toggle("fa-arrow-right");
-    icon.classList.toggle("fa-arrow-left");
-  }
-}
-
-// ===== Call Form Handling =====
-const getCallBtn = document.getElementById("getCallBtn");
-const callForm   = document.getElementById("callForm");
-const closeForm  = document.getElementById("closeForm");
-const leftBar    = document.getElementById("leftBar");
-const rightBar   = document.getElementById("rightBar");
-
-// Show form on hover Get Call
-getCallBtn.addEventListener("mouseenter", () => {
-  callForm.classList.add("active");
-});
-
-// Keep open when hovering inside form
-callForm.addEventListener("mouseenter", () => {
-  callForm.classList.add("active");
-});
-
-// Hide if mouse moves to any other left bar button
-leftBar.querySelectorAll(".btn-box").forEach(btn => {
-  if (btn.id !== "getCallBtn") {
-    btn.addEventListener("mouseenter", () => {
-      callForm.classList.remove("active");
-    });
-  }
-});
-
-// Hide if mouse moves to right bar buttons
-rightBar.querySelectorAll(".btn-box").forEach(btn => {
-  btn.addEventListener("mouseenter", () => {
-    callForm.classList.remove("active");
-  });
-});
-
-// Hide if mouse leaves the form area
-callForm.addEventListener("mouseleave", () => {
-  if (!getCallBtn.matches(":hover")) {
-    callForm.classList.remove("active");
-  }
-});
-
-// Close button
-closeForm.addEventListener("click", () => {
-  callForm.classList.remove("active");
-});
-</script>
-
+<script src="assets/js/script.js"></script>
 
 
 

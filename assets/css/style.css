@@ -79,7 +79,25 @@ padding-top: 10px;
   }
 }
 
-/* why choise section */
+/* services section */
+  h2.heding {
+    display: inline-block;
+    padding-bottom: 20px; /* space between text and underline */
+    position: relative;
+  }
+
+  h2.heding::after {
+    content: "";
+    display: block;
+    height: 4px; /* underline thickness */
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(to right, #48b54a 50%, #043220 50%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
   .card img {
     object-fit: cover;
     height: auto;
