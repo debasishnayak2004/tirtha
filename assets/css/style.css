@@ -70,9 +70,7 @@ padding-top: 10px;
 .footer-menu li a:hover{
   color: #32CD32;
 }
-.footer-services{
-  padding-left: 25px;
-}
+
 @media (max-width: 767px) {
   .footer-menu {
     padding-left: 0px; /* remove padding on small screens */
