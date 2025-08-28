@@ -9,7 +9,7 @@
     }
     
 /* header code  */
-  .navbar-nav .nav-link { font-weight: 500;
+  .navbar-nav .nav-link { font-weight: 700;
     color: #000;
    
 }
@@ -153,11 +153,24 @@ padding-top: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+ 
 }
 #rightBar{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+ 
+}
+@media (max-width: 768px) {
+  #leftBar {
+    width: 35px;
+  }
+  #rightBar {
+    width: 35px;
+  }
+  #getCallBtn {
+    width: 35px;
+  }
 }
 /* Button Colors */
 .email { background: #32CD32; }
@@ -174,150 +187,6 @@ padding-top: 10px;
 .hide-left { transform: translate(-100%, -50%); }
 .hide-right { transform: translate(100%, -50%); }
 
-/* ===== Wrapper for Get Call Button + Form ===== */
-.btn-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-/* ===== Call Form ===== */
-.call-form {
-  position: absolute;
-  left: 70px;   /* distance from left button bar */
-  top: 0;
-  width: 320px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  padding: 20px;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  z-index: 9999;
-}
-
-/* Show when active */
-.call-form.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-/* ===== Call Form Header ===== */
-.call-form .form-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.call-form .form-header h5 {
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.call-form .close-btn {
-  cursor: pointer;
-  font-size: 20px;
-  color: #333;
-}
-
-/* ===== Form Inputs ===== */
-.call-form form input,
-.call-form form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-.call-form form textarea {
-  min-height: 80px;
-  resize: vertical;
-}
-
-/* ===== Form Button ===== */
-.call-form form button {
-  width: 100%;
-  padding: 12px;
-  background: #32CD32;
-  border: none;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.call-form form button:hover {
-  background: #28a428;
-}
-
-
-
-
-
-
-.call-form.active {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.call-form .form-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.call-form .form-header h5 {
-  margin: 0;
-  font-weight: bold;
-  color: #0026d3;
-}
-
-.call-form .close-btn {
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-  color: #666;
-}
-
-.call-form form input,
-.call-form form textarea {
-  width: 100%;
-  margin-bottom: 12px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 30px;
-  outline: none;
-}
-
-.call-form form textarea {
-  border-radius: 15px;
-  min-height: 80px;
-}
-
-.call-form form button {
-  width: 100%;
-  padding: 12px;
-  background: #7d5cff;
-  color: #fff;
-  font-weight: bold;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.call-form form button:hover {
-  background: #5a3fd1;
-}
 
 /* about page */
 .section-title {
@@ -408,6 +277,33 @@ padding-top: 10px;
     background-color: #235939;
     color: #ffffff;
 }
+.se-btn:hover{
+    background-color: #ffffff;
+    color: #235939;
+    border: 1px solid #235939;
+}
 .color{
     color: #235939;
 }
+ .contact-card {
+    color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+
+  .phone-card { background-color: #48b54a; }
+  .email-card { background-color: #053120; }
+  .address-card { background-color: #48b54a; }
+
+  .contact-card a {
+    color: #fff;
+  }
+
+  .contact-card i {
+    display: block;
+  }

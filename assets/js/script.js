@@ -13,18 +13,13 @@
   }, { offset: '80%' });
 
 //   swiper js code
-   var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".mySwiper", {
       cssMode: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
       },
-    loop: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-      
       mousewheel: true,
       keyboard: true,
     });
