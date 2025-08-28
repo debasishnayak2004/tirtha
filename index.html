@@ -210,20 +210,39 @@
         </h2>
       </div>
 
-      <div class="row align-items-stretch" >
-        <!-- Left Image -->
-        <div class="col-md-6 d-flex" >
-          <img src="assets/images/IMAGE-1-OFFICE-MEETING.png" alt="Left Image" class="img-fluid rounded shadow w-100 object-fit-cover" style="background-color: #ffffff;">
-        </div>
+      <!-- ✅ Mobile (One Card) -->
+<div class="d-md-none">
+  <div class="card shadow border-0">
+    <video class="w-100 rounded-top object-fit-cover" controls autoplay muted loop>
+      <source src="assets/images/address.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <img src="assets/images/IMAGE-1-OFFICE-MEETING.png" 
+         alt="Mobile Image" 
+         class="img-fluid rounded-bottom w-100 object-fit-cover" 
+         style="background-color: #ffffff;">
+  </div>
+</div>
 
-        <!-- Right Local Video -->
-        <div class="col-md-6 d-flex">
-          <video class="w-100 rounded shadow object-fit-cover" controls autoplay muted loop>
-            <source src="assets/images/address.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
+<!-- ✅ Desktop (Side by Side) -->
+<div class="row align-items-stretch d-none d-md-flex">
+  <!-- Left Image -->
+  <div class="col-md-6 d-flex">
+    <img src="assets/images/IMAGE-1-OFFICE-MEETING.png" 
+         alt="Left Image" 
+         class="img-fluid rounded shadow w-100 object-fit-cover" 
+         style="background-color: #ffffff;">
+  </div>
+
+  <!-- Right Video -->
+  <div class="col-md-6 d-flex">
+    <video class="w-100 rounded shadow object-fit-cover" controls autoplay muted loop>
+      <source src="assets/images/address.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
     </div>
 
   </div>
