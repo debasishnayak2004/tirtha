@@ -1,4 +1,18 @@
- $('#counter-section').waypoint(function() {
+  //  nav bar 
+  const menuToggle = document.getElementById("menuToggle");
+  const navbarNav = document.getElementById("navbarNav");
+  const closeMenu = document.getElementById("closeMenu");
+
+  menuToggle.addEventListener("click", () => {
+    navbarNav.classList.add("active");
+  });
+
+  closeMenu.addEventListener("click", () => {
+    navbarNav.classList.remove("active");
+  });
+
+
+$('#counter-section').waypoint(function() {
     $('.counter').each(function () {
       var $this = $(this);
       $({ Counter: 0 }).animate({ Counter: $this.data('target') }, {

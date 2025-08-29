@@ -44,6 +44,59 @@
 .dropdown-menu {
   border-radius: 8px;
 }
+/* Slide-in menu for mobile */
+@media (max-width: 991px) {
+  #navbarNav {
+    position: fixed;
+    top: 0;
+    left: -300px;   /* hidden */
+    width: 280px;
+    height: 100%;
+    background: #fff; /* keep white background */
+    transition: all 0.4s ease;
+    opacity: 0;
+    z-index: 9999;
+    padding-top: 60px;
+  }
+
+  #navbarNav.active {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+/* Mobile slide-in menu */
+@media (max-width: 991px) {
+  #navbarNav {
+    position: fixed;
+    top: 0;
+    left: -300px;   /* hidden */
+    width: 280px;
+    height: 100%;
+    background: #fff; /* same as navbar */
+    transition: all 0.4s ease;
+    opacity: 0;
+    z-index: 9999;
+    padding: 60px 20px 20px;
+  }
+
+  #navbarNav.active {
+    left: 0;
+    opacity: 1;
+  }
+
+  /* Close button */
+  .close-btn {
+    font-size: 28px;
+    border: none;
+    background: none;
+    color: #000;
+    float: right;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+}
+
   /* header code end */
 
     .seo-header {

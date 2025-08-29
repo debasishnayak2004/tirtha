@@ -52,7 +52,7 @@
 </div>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
     <div class="container">
       <!-- Logo -->
       <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
@@ -60,39 +60,39 @@
       </a>
 
       <!-- Toggle (Mobile) -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" id="menuToggle">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <!-- Menu -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <div class="navbar-collapse justify-content-center" id="navbarNav">
+        <!-- Close Button (only for mobile) -->
+        <button class="close-btn d-lg-none" id="closeMenu">×</button>
+
         <ul class="navbar-nav gap-4">
           <li class="nav-item">
-            <a class="nav-link " href="index.html">HOME</a>
+            <a class="nav-link active" href="index.html">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="about.html">ABOUT US</a>
+            <a class="nav-link" href="about.html">ABOUT US</a>
           </li>
           <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button"  data-bs-toggle="dropdown" aria-expanded="false"> SERVICES</a>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="services-bulk-whatsapp.html">Bulk Whatsapp</a></li>
-    <li><a class="dropdown-item" href="services-bulk-sms.html">Bulk Sms</a></li>
-    <li><a class="dropdown-item" href="services-website-design.html">Website Design</a></li>
-    <li><a class="dropdown-item" href="services-digital-marketing.html">Digital Marketing</a></li>
-    <li><a class="dropdown-item" href="services-bulk-voice-call-ivr.html">Bulk Voice Call (IVR)</a></li>
-    <li><a class="dropdown-item" href="services-email-marketing.html">Bulk Email Marketing</a></li>
-  </ul>
-</li>
-
+            <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" 
+              data-bs-toggle="dropdown" aria-expanded="false">SERVICES</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="services-bulk-whatsapp.html">Bulk Whatsapp</a></li>
+              <li><a class="dropdown-item" href="services-bulk-sms.html">Bulk Sms</a></li>
+              <li><a class="dropdown-item" href="services-website-design.html">Website Design</a></li>
+              <li><a class="dropdown-item" href="services-digital-marketing.html">Digital Marketing</a></li>
+              <li><a class="dropdown-item" href="services-bulk-voice-call-ivr.html">Bulk Voice Call (IVR)</a></li>
+              <li><a class="dropdown-item" href="services-email-marketing.html">Bulk Email Marketing</a></li>
+            </ul>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">CONTACT US</a>
           </li>
         </ul>
       </div>
-
-      <!-- Search Icon -->
-       
     </div>
   </nav>
 </header>
