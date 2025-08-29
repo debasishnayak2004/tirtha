@@ -11,6 +11,15 @@
     navbarNav.classList.remove("active");
   });
 
+  // gat a call back
+
+    document.addEventListener("DOMContentLoaded", function () {
+    if (!sessionStorage.getItem("popupShown")) {
+      var myModal = new bootstrap.Modal(document.getElementById('callbackPopup'));
+      myModal.show();
+      sessionStorage.setItem("popupShown", "true");
+    }
+  });
 
 $('#counter-section').waypoint(function() {
     $('.counter').each(function () {
