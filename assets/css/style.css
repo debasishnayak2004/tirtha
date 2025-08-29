@@ -76,6 +76,25 @@ padding-top: 10px;
     padding-left: 0px; /* remove padding on small screens */
   }
 }
+/* under line */
+
+ .heding {
+    display: inline-block;
+    padding-bottom: 20px; /* space between text and underline */
+    position: relative;
+  }
+
+  .heding::after {
+    content: "";
+    display: block;
+    height: 4px; /* underline thickness */
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(to right, #48b54a 50%, #043220 50%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 
 /* services section */
   h2.heding {
@@ -307,3 +326,50 @@ padding-top: 10px;
   .contact-card i {
     display: block;
   }
+
+  .underline-green {
+  color: #ffffff;              /* text color white */
+  text-decoration: underline;
+  text-decoration-color: #28a745; /* underline green (#28a745 = Bootstrap green) */
+  text-underline-offset: 10px;   /* gap between text and underline */
+}
+
+/* footer */
+.footer-logo{
+padding-left: 40px !important;
+}
+.footer-company{
+  padding-left: 60px !important;
+}
+ @media (max-width: 767px) {
+    .footer-company {
+      padding-left: 0 !important;
+    }
+    .footer-logo {
+      padding-left: 0 !important;
+    }
+  }
+
+  .free-seo{
+margin-right: 100px;
+  }
+   @media (max-width: 767px) {
+    .free-seo {
+      margin-right: 0 !important;
+      margin-bottom: 20px !important;
+    }
+  }
+  /* testimonial */
+.mySwiper3 .swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.mySwiper3 .swiper-slide {
+  display: flex;
+  height: auto !important;
+}
+
+.text-justify {
+  text-align: justify; /* Bootstrap 5 removed text-justify */
+}
